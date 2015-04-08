@@ -88,8 +88,6 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	log.Printf("%s", slaveStatus["Master_Host"])
-
 	serverOk(w, slaveStatus)
 }
 
